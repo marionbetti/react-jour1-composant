@@ -6,7 +6,7 @@ class Liste extends Component {
     return (
       <ul>
         <li>lundi</li>
-        <li>mardi</li>
+        <li className="badge badge-success">mardi</li>
         <li>mercredi</li>
       </ul>
     );
