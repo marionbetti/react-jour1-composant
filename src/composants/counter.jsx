@@ -7,12 +7,20 @@ class Counter extends Component {
     valeur: 0,
     titre: "Mon Compteur !"
   };
+
+  style = {
+    fontSize: 15,
+    color: "red"
+  };
+
   render() {
     return (
       <React.Fragment>
-        <h1>{this.state.titre}</h1>
+        <h1 style={this.style}>{this.state.titre}</h1>
         <span className="badge badge-light m-2">{this.state.valeur}</span>
-        <button>Ajouter</button>
+        <button style={{ color: "blue", fontWeight: "lighter" }}>
+          Ajouter
+        </button>
       </React.Fragment>
     );
   }
