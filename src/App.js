@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Counter from "./composants/counter";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <div className="alert alert-primary" role="alert">
         bootstrap est bien installé (en tout cas la partie css)
       </div>
+      <Counter />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
